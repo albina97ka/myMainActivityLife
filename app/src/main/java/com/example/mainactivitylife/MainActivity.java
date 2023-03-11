@@ -73,4 +73,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "onRestoreInstanceState()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onRestoreInstanceState");
     }
+    private void resetUI() {
+        ((TextView) findViewById(R.id.txt_counter)).setText(count.toString());
+        Log.d(TAG, "resetUI");
+    }
 }
